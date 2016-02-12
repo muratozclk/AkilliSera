@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import application.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+
+<Pane prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="akıllısera.Content1Controller">
+   <children>
+      <StackPane prefHeight="50.0" prefWidth="334.0">
+         <children>
+            <MaterialText text="Sera Ekle/Düzenle" />
+         </children>
+      </StackPane>
+      <StackPane layoutY="50.0" prefHeight="50.0" prefWidth="93.0">
+         <children>
+            <MaterialText text="Sera Adı" />
+         </children>
+      </StackPane>
+      <StackPane layoutY="115.0" prefHeight="50.0" prefWidth="111.0">
+         <children>
+            <MaterialText text=" Sera Adresi" />
+         </children>
+      </StackPane>
+      <StackPane layoutY="170.0" prefHeight="50.0" prefWidth="79.0">
+         <children>
+            <MaterialText text="Sera IP" />
+         </children>
+      </StackPane>
+      <StackPane layoutY="235.0" prefHeight="50.0" prefWidth="93.0">
+         <children>
+            <MaterialText text="Sera Port" />
+         </children>
+      </StackPane>
+      <StackPane layoutY="290.0" prefHeight="50.0" prefWidth="93.0">
+         <children>
+            <MaterialText text="Ürün Cinsi" />
+         </children>
+      </StackPane>
+      <StackPane layoutY="355.0" prefHeight="50.0" prefWidth="79.0">
+         <children>
+            <MaterialText text="Sıcaklık" />
+         </children>
+      </StackPane>
+      <StackPane layoutY="420.0" prefHeight="50.0" prefWidth="79.0">
+         <children>
+            <MaterialText text="Nem" />
+         </children>
+      </StackPane>
+      <JFXTextField fx:id="txt_sad" layoutX="140.0" layoutY="60.0" />
+      <JFXTextField fx:id="txt_sadres" layoutX="140.0" layoutY="125.0" />
+      <JFXTextField fx:id="txt_ip" layoutX="140.0" layoutY="180.0" />
+      <JFXTextField fx:id="txt_port" layoutX="140.0" layoutY="245.0" />
+      <JFXTextField fx:id="txt_sicaklik" layoutX="140.0" layoutY="365.0" />
+      <JFXTextField fx:id="txt_nem" layoutX="140.0" layoutY="430.0" />
+      <JFXComboBox fx:id="cmb_urun" layoutX="140.0" layoutY="300.0" prefHeight="31.0" prefWidth="186.0" />
+      <StackPane layoutY="475.0" prefHeight="76.0" prefWidth="460.0">
+         <children>
+            <JFXButton fx:id="btn_kaydet" mnemonicParsing="false" onAction="#seraKaydet" text="Kaydet" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="400.0" layoutY="1.0" prefHeight="550.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="550.0" prefWidth="200.0">
+               <children>
+                  <MaterialText layoutX="65.0" layoutY="33.0" text="SERALAR" />
+                  <JFXComboBox fx:id="cmb_ssec" layoutX="20.0" layoutY="111.0" prefWidth="150.0" />
+                 
+                  <JFXButton fx:id="btn_duzenle" layoutX="63.0" layoutY="275.0" mnemonicParsing="false" onAction="#seraDuzenle" text="Düzenle" />
+                 
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</Pane>

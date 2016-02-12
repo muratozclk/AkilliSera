@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import application.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="akıllısera.Content2Controller">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Seralarda-Polikarbon.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D height="550.0" width="600.0" />
+         </viewport>
+      </ImageView>
+      <javafx.scene.control.Button fx:id="btn_ayarla" layoutX="225.0" layoutY="137.0" mnemonicParsing="false" onAction="#ayarla" text="Sıcaklığı Ayarla" />
+      <javafx.scene.control.Button fx:id="btn_havalandirma" layoutX="229.0" layoutY="221.0" mnemonicParsing="false" onAction="#havac" text="Havalandırmayı Aç" />
+      <ComboBox fx:id="cmb_ssec" layoutX="225.0" layoutY="24.0" prefWidth="150.0" />
+      <TextField fx:id="txt_sicaklik" layoutY="137.0" prefHeight="31.0" prefWidth="177.0" />
+      <javafx.scene.control.Button fx:id="btn_su" layoutX="234.0" layoutY="323.0" mnemonicParsing="false" onAction="#suac" text="Sulamayı Aç" />
+      <javafx.scene.control.Button fx:id="btn_baglan" layoutX="464.0" layoutY="24.0" mnemonicParsing="false" onAction="#baglan" text="Bağlan" />
+      <javafx.scene.control.Button fx:id="btn_sera" layoutX="37.0" layoutY="24.0" mnemonicParsing="false" onAction="#seraGetir" text="Seraları Getir" />
+   </children>
+</Pane>

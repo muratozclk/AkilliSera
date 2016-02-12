@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="974.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="akıllısera.SeraSecController">
+  <tabs>
+    <Tab text="Sera Seçim">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.5468227424749164" layoutX="192.0" layoutY="91.0" prefHeight="361.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Label layoutX="15.0" layoutY="63.0" text="Sera Adı:" />
+                              <Label layoutX="15.0" layoutY="113.0" text="Sera Adres" />
+                              <Label layoutX="15.0" layoutY="166.0" text="Sera IP" />
+                              <Label layoutX="14.0" layoutY="230.0" text="Sera Port" />
+                              <Label layoutX="16.0" layoutY="296.0" text="Ürün Cinsi" />
+                              <Label layoutX="20.0" layoutY="365.0" text="Sera Sıcaklık" />
+                              <Label layoutX="12.0" layoutY="427.0" text="Sera Nem" />
+                              <TextField fx:id="txt_sad" layoutX="120.0" layoutY="58.0" />
+                              <TextField fx:id="txt_sadres" layoutX="120.0" layoutY="108.0" />
+                              <TextField fx:id="txt_sicaklik" layoutX="120.0" layoutY="360.0" />
+                              <TextField fx:id="txt_nem" layoutX="110.0" layoutY="427.0" />
+                              <TextField fx:id="txt_ip" layoutX="120.0" layoutY="161.0" />
+                              <TextField fx:id="txt_port" layoutX="120.0" layoutY="225.0" />
+                              <Button fx:id="btn_kaydet" layoutX="389.0" layoutY="458.0" mnemonicParsing="false" onAction="#seraKaydet" text="Kaydet" />
+                              <Label layoutX="130.0" layoutY="24.0" text="SERA EKLME" />
+                              <ComboBox fx:id="cmb_urun" layoutX="120.0" layoutY="291.0" prefHeight="31.0" prefWidth="187.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Label layoutX="135.0" layoutY="41.0" text="SERAlar" />
+                              <Button fx:id="btn_baglan" layoutX="154.0" layoutY="137.0" mnemonicParsing="false" onAction="#seraBaglan" text="Bağlan" />
+                              <Button fx:id="btn_duzenle" layoutX="161.0" layoutY="234.0" mnemonicParsing="false" onAction="#seraDuzenle" text="Düzenle" />
+                              <Button fx:id="btn_sil" layoutX="161.0" layoutY="328.0" mnemonicParsing="false" onAction="#sera_sil" prefHeight="31.0" prefWidth="99.0" text="Sil" />
+                              <ComboBox fx:id="cmb_ssec" layoutX="173.0" layoutY="75.0" prefWidth="150.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Sera Kontrol">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btn_sicaklik" layoutX="252.0" layoutY="71.0" mnemonicParsing="false" onAction="#sicaklikArtar" text="Arttır" />
+                  <Label fx:id="lbl_sicaklik" layoutX="14.0" layoutY="76.0" prefHeight="21.0" prefWidth="143.0" />
+                  <Button fx:id="btn_azalt" layoutX="405.0" layoutY="71.0" mnemonicParsing="false" onAction="#sicaklikAzalt" text="Azalt" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Ürünler">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

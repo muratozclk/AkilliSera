@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AkýllýSera.jnlp">
+  <information>
+    <title>AkýllýSera</title>
+    <vendor>Halil</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="8.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AkýllýSera.jar" size="1342501" download="eager" />
+    <jar href="lib/JFXMaterial.jar" size="107774" download="eager" />
+    <jar href="lib/controlsfx-8.40.10-20150912.020658-408.jar" size="922403" download="eager" />
+    <jar href="lib/core-8.0b8.jar" size="37940" download="eager" />
+    <jar href="lib/datafx-8.0b8.jar" size="261" download="eager" />
+    <jar href="lib/flow-8.0b8.jar" size="63203" download="eager" />
+    <jar href="lib/fontawesomefx-8.7.jar" size="438884" download="eager" />
+    <jar href="lib/javassist.jar" size="710746" download="eager" />
+    <jar href="lib/javax.inject.jar" size="2497" download="eager" />
+    <jar href="lib/jfoenix.jar" size="1695221" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.23-bin.jar" size="827921" download="eager" />
+    <jar href="lib/retrolambda-2.0.6.jar" size="224768" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AkýllýSera" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="akýllýsera.AkýllýSera"  name="AkýllýSera" />
+  <update check="always"/>
+</jnlp>

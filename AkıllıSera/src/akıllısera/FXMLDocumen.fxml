@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+<?import application.*?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="akıllısera.FXMLDocumentController" maxWidth="600" maxHeight="400"  >
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #1467CC;">
+      <children> 
+       <MaterialText fill="WHITE" layoutX="64.0" layoutY="30.0" text="SDÜ-AKILLI SERA">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </MaterialText>
+            <JFXButton fx:id="btnMenu" layoutX="7.0"  prefHeight="50.0" prefWidth="51.0" />
+            
+            
+      </children>
+      </AnchorPane>
+      
+      <SplitPane cacheHint="SPEED" dividerPositions="0.5016722408026756" layoutY="49.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="600.0" >
+        <items>
+          <AnchorPane depthTest="ENABLE" minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="305.0">
+               <children>
+                  <MaterialText fill="#797878" layoutX="14.0" layoutY="123.0"  text="Kullanıcı Adı:" />
+                  <JFXTextField fx:id="yeni_ad" layoutX="102.0" layoutY="99.0" promptText="Kullanıcı Adınızı Giriniz"  />
+                  <MaterialText fill="#797878" layoutX="14.0" layoutY="175.0" text="Parola:" />
+                  <JFXPasswordField fx:id="yeni_psw" layoutX="102.0" layoutY="155.0" />
+                  <JFXButton fx:id="kul_kaydet" layoutX="125.0" layoutY="256.0" mnemonicParsing="false" onAction="#olustur" text="Oluştur" />
+                  
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                   
+                  <MaterialText fill="#797878" layoutX="37.0" layoutY="121.0" text="Kullanıcı Adı:" />
+                  <MaterialText fill="#797878" layoutX="37.0" layoutY="180.0" text="Parola:" />
+                  <JFXPasswordField fx:id="kul_psw" layoutX="137.0" layoutY="155.0" prefHeight="25.0" prefWidth="149.0" />
+                  <JFXButton fx:id="Kul_ac" layoutX="136.0" layoutY="264.0" mnemonicParsing="false" onAction="#oturumac" text="Oturum Aç"  />
+                  <JFXComboBox fx:id="kul_ad" layoutX="136.0" layoutY="96.0" prefWidth="150.0" style="-fx-backgorund-color:#424242" />
+                  
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

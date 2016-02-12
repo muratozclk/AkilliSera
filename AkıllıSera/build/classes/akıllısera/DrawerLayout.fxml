@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import application.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="akıllısera.DrawerController">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@drawerImg.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="85.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@SuleymanDemirelUniversitesiLogosu.jpg" />
+            </image>
+        </ImageView>
+        <VBox fx:id="vbox" layoutX="2.0" layoutY="150.0" prefHeight="448.0" prefWidth="240.0">
+            
+        </VBox>
+        
+    </children>
+</Pane>
